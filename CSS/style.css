@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.clear
+{
+	clear:both;
+}
+header
+{
+	width: 1140px;
+	margin: 0 auto;
+}
+.logo
+{
+	width: 350px;
+	height: 70px;
+	margin: 0 15px;
+	background-color:#999;
+	float:left;
+}
+.slogan
+{
+	width: 730px;
+	height: 70px;
+	margin: 0 15px;
+	background-color:#999;
+	float:left;
+}
+nav
+{
+	width: 1110px;
+	height: 50px;
+	margin: 15px auto;
+	background-color:#999;
+}
+nav ul
+{
+	list-style:none;
+}
+nav ul li
+{
+	float:left;
+}
+nav ul li a
+{
+	padding: 0 10px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#fff;
+	line-height: 50px;
+}
+#gioi_thieu
+{
+	width: 1110px;
+	height: 350px;
+	margin: 0 auto;
+	background-color:#6FF
+}
+#san_pham
+{
+	width: 1110px;
+	height: 350px;
+	margin: 15px auto 0 auto;
+	background-color:#6FF
+}
+.san_pham
+{
+	width: 350px;
+	height: 150px;
+	margin: 10px 10px;
+	background-color:#F39;
+	float:left;
+}
+#tin_tuc
+{
+	width: 1110px;
+	height: 350px;
+	margin: 15px auto 0 auto;
+	background-color:#6FF
+}
+aside
+{
+	width: 255px;
+	min-height: 100px;
+	background-color:#9F3;
+	float:left;
+	margin: 15px;
+}
+aside ul
+{
+	list-style:none;
+}
+aside ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	padding: 0 15px;
+	line-height:30px;
+	color:#FFF;
+	border-bottom: 1px solid #0FF;
+	display:block;
+}
+#gallery
+{
+	width: 1110px;
+	height: 350px;;
+	margin: 15px auto;
+	background-color:#096;
+}
