@@ -1,0 +1,227 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.clear{
+	clear: both;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.menu{
+	width: 70%;
+	position: absolute;
+	top: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.menu ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	background-color: #d2c8cd78;
+	padding: 10px 30px;
+	font-size: 25px;
+	color: #0a89c7;
+	cursor: pointer;
+}
+.menu ul li.activeLi{
+	background-color: #ef9c475e;
+}
+.content, .content > ul, .fluidcontainer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.fluidcontainer{
+	background-size: cover;
+}
+.container{
+	width: 70%;
+	height: 65%;
+	background-color: #fff;
+	position: absolute;
+	bottom: 7%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 3%;
+	display: flex;
+}
+.active{
+	opacity: 1;
+	visibility: visible;
+}
+.inactive{
+	opacity: 0;
+	visibility: hidden;
+}
+.avatar{
+	flex-grow: 1;
+	float: left;
+	background-image: url('../images/Avatar - Copy.jpg');
+	background-size: cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.aboutMe{
+	flex-grow: 1;
+	text-align: left;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+.aboutMe .fa-comment{
+	font-size: 40px;
+	color: #f35c14;
+}
+.aboutMe h1{
+	font-size: 50px;
+	color: #666;
+}
+.aboutMe h1 span{
+	color: #f35c14;
+}
+.aboutMe h3{
+	font-size: 40px;
+	color: #3d4451;
+}
+.aboutMe .border{
+	border: 1px solid #f35c14;
+	margin: 30px 0;
+}
+.aboutMe h5{
+	margin: 20px auto 20px 0;
+	font-size: 30px;
+	color: #3d4451;
+}
+.fluidcontainer.active  .container{
+	animation: moveup 0.8s linear forwards;
+}
+@keyframes moveup{
+	0%{
+		opacity: 0;
+		bottom: -50%;
+	}
+	100%{
+		opacity: 1;
+		bottom: 7%;
+	}
+}
+.container #skill{
+	flex-grow: 2;
+}
+.container #skill h5{
+	margin: 20px 0 3px 0;
+	font-size: 25px;
+	color: #3d4451;
+}
+.container #skill .myProgress{
+	width: 100%;
+	height: 20px;
+	background-color: #6666662e;
+}
+.container #skill .myProgress .bars{
+	width: 80%;
+	height: 100%;
+	background-color: #f35c14;
+}
+.container #project{
+	flex-grow: 1;
+}
+.container #project ul{
+	width: 100%;
+	margin-left: 10%;
+	margin-top: 10%;
+	list-style: none;
+}
+.container #project ul li{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	border: 10px solid #f35c14;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #f35c14;
+	text-align: center;
+	padding: 20px;
+	line-height: 80px;
+	cursor: pointer;
+}
+.container #project ul li:hover{
+	transform: scale(1.3);
+	transition: 0.2s linear;
+}
+.container .workplace, .container .education{
+    width: 100%;
+    height: 100%;
+}
+.container .workplace .company{
+    width: 30%;
+    height: 45%;
+    float: left;
+}
+.container .workplace .company h5{
+    color: #4c900d;
+    font-size: 25px;
+}
+.container .workplace .company h6{
+    color: #3d4451;
+    font-size: 20px;
+}
+.container .workplace .jobDesc{
+    width: 60%;
+    height: 45%;
+    float: left;
+}
+.container .workplace .jobDesc h5{
+    color: #4c900d;
+    font-size: 25px;
+}
+.fa-code, .fa-sitemap, .fa-book{
+    font-size: 35px;
+    color: #4c900d;
+}
+.container .workplace .jobDesc .verticalBorder{
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 21px;
+    width: 0;
+    border-left: 4px solid #969696;
+    float: left;
+}
+.container .workplace .jobDesc .mainResponsibility{
+    float: left;
+    width: 90%;
+    height: 90%;
+}
+.container .workplace .jobDesc .mainResponsibility h6{
+    color: #3d4451;
+    font-size: 20px;
+    margin: 10px 15px;
+}
+.container .workplace .jobDesc .mainResponsibility ul{
+    margin: 5px 30px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.container .education .workplace{
+    height: 25%;
+}
+.container .education .diviseBorder{
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid #969696;
+}
+.container .education h1{
+    margin: 20px 0;
+}
+.container .education .jobDesc .verticalBorder{
+    height: 50%;
+}
