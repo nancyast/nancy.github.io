@@ -20,15 +20,17 @@ html,body{
 }
 .menu ul{
 	list-style: none;
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	border: none;
 }
 .menu ul li{
+	display: inline-block;
 	background-color: #d2c8cd78;
 	padding: 10px 30px;
 	font-size: 25px;
 	color: #0a89c7;
 	cursor: pointer;
+	margin-left: -4px;
 }
 .menu ul li.activeLi{
 	background-color: #ef9c475e;
@@ -164,7 +166,7 @@ html,body{
 }
 .container .workplace .company{
     width: 30%;
-    height: 45%;
+    height: 50%;
     float: left;
 }
 .container .workplace .company h5{
@@ -172,12 +174,13 @@ html,body{
     font-size: 25px;
 }
 .container .workplace .company h6{
+	margin-top: 10px;
     color: #3d4451;
     font-size: 20px;
 }
 .container .workplace .jobDesc{
-    width: 60%;
-    height: 45%;
+    width: 68%;
+    height: 50%;
     float: left;
 }
 .container .workplace .jobDesc h5{
@@ -224,4 +227,92 @@ html,body{
 }
 .container .education .jobDesc .verticalBorder{
     height: 50%;
+}
+
+@media screen and (max-width: 480px){
+	// CSS rule for Smartphone
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+	// CSS rule for tablet
+}
+
+@media screen and (min-width: 768px) and (max-width: 1223px){
+	.aboutMe h1{
+		font-size: 40px;
+	}
+	.aboutMe h3{
+		font-size: 30px;
+	}
+	.aboutMe h5{
+		font-size: 20px;
+	}
+	.container #skill .myProgress {
+		height: 15px;
+	}
+	.container #project ul li {
+		width: 60px;
+		height: 60px;
+		font-size: 17px;
+		line-height: 65px;
+	}
+	.container .workplace .company h5, .container .workplace .jobDesc h5 {
+		font-size: 21px;
+	}
+	.container .workplace .company h6{
+		font-size: 18px;
+		margin-top: 7px;
+	}
+	.container .workplace .jobDesc .mainResponsibility h6 {
+		font-size: 18px;
+		margin: 5px 15px;
+	}
+	.container .workplace .jobDesc .mainResponsibility ul {
+		margin: 5px 30px;
+		font-size: 17px;
+		line-height: 23px;
+	}
+	.container .workplace .jobDesc .verticalBorder {
+		height: 75%;
+	}
+}
+
+@media only screen  and (min-width : 1224px) and (max-width: 1823px){
+	.aboutMe h1{
+		font-size: 40px;
+	}
+	.aboutMe h3{
+		font-size: 30px;
+	}
+	.aboutMe h5{
+		font-size: 20px;
+	}
+	.container #skill .myProgress {
+		height: 15px;
+	}
+	.container #project ul li {
+		width: 60px;
+		height: 60px;
+		font-size: 17px;
+		line-height: 65px;
+	}
+	.container .workplace .company h5, .container .workplace .jobDesc h5 {
+		font-size: 21px;
+	}
+	.container .workplace .company h6{
+		font-size: 18px;
+		margin-top: 7px;
+	}
+	.container .workplace .jobDesc .mainResponsibility h6 {
+		font-size: 18px;
+		margin: 5px 15px;
+	}
+	.container .workplace .jobDesc .mainResponsibility ul {
+		margin: 5px 30px;
+		font-size: 17px;
+		line-height: 23px;
+	}
+	.container .workplace .jobDesc .verticalBorder {
+		height: 75%;
+	}
 }
