@@ -160,7 +160,7 @@ html,body{
 	transform: scale(1.3);
 	transition: 0.2s linear;
 }
-.container .workplace, .container .education{
+.container .workplace{
     width: 100%;
     height: 100%;
 }
@@ -214,19 +214,34 @@ html,body{
     font-size: 18px;
     line-height: 25px;
 }
-.container .education .workplace{
-    height: 25%;
-}
-.container .education .diviseBorder{
-    width: 100%;
-    height: 0;
-    border-bottom: 2px solid #969696;
-}
-.container .education h1{
+
+.container .education h1, .container .softskill h1, .container .hobby h1{
     margin: 20px 0;
 }
 .container .education .jobDesc .verticalBorder{
     height: 50%;
+}
+.softskill, .hobby{
+	color: #3d4451;
+}
+.softskill ul, .hobby ul{
+	padding-left: 40px;
+}
+
+#reactjs{
+	animation: focusMe 1s ease infinite ;
+}
+
+@keyframes focusMe{
+	0%, 30%{
+		transform: scale(0.9);
+	}
+	50%, 70%{
+		transform: scale(1.1);
+	}
+	90%, 100%{
+		transform: scale(1);
+	}
 }
 
 @media screen and (max-width: 480px){
